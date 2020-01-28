@@ -27,7 +27,7 @@ public class CakeView extends SurfaceView {
     public static final float cakeWidth = 1200.0f;
     public static final float layerHeight = 200.0f;
     public static final float frostHeight = 50.0f;
-    public static final float candleHeight = 300.0f;
+    public static final float candleHeight = 200.0f;
     public static final float candleWidth = 40.0f;
     public static final float wickHeight = 30.0f;
     public static final float wickWidth = 6.0f;
@@ -119,7 +119,7 @@ public class CakeView extends SurfaceView {
         //Then a second cake layer
         canvas.drawRect(cakeLeft, top, cakeLeft + cakeWidth, bottom, cakePaint);
 
-        //Now a candle in the  center
+        //Now a candle in the center
         drawCandle(canvas, cakeLeft + cakeWidth/3, cakeTop);
         drawCandle(canvas, cakeLeft + (2 * cakeWidth)/3, cakeTop);
     }//onDraw
